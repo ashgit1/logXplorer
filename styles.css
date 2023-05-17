@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .file-selection label,
+  .filter label {
+    font-weight: bold;
+  }
+  
+  .file-selection input[type="file"],
+  .filter input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Log Display Styles */
+  .log-display {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .log-display ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .log-display li {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    display: flex;
+    justify-content: space-between; /* Align items to left and right */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px;
+  }
+  
+  .pagination {
+    flex-grow: 1; /* Expand to fill available space */
+    text-align: left; /* Align pagination buttons to the left */
+  }
+  
+  .pagination button,
+  .export button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; /* Add margin-left instead of margin-right */
+    transition: background-color 0.3s ease;
+  }
+  
+  .export button {
+    background-color: #008CBA;
+  }
+  
+  .reset-btn {
+    background-color: #FF4136;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-btn:hover {
+    background-color: #DC291E;
+  }
+  

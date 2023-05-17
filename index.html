@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="file-selection">
+                <label for="log-file">Log File:</label>
+                <input type="file" id="log-file" name="log-file" onchange="handleFileSelect(event)">
+            </div>
+            <div class="filter">
+                <label for="search">Filter:</label>
+                <input type="text" id="search" name="search" placeholder="Search...">
+            </div>
+        </div>
+        <div class="log-display">
+            <ul id="log-list">
+                <!-- Log entries will be dynamically added here -->
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="pagination">
+                
+            </div>
+            <div class="reset">
+                <button class="reset-btn" onclick="reset()">Reset</button>
+            </div>
+            <div class="export">
+                <button class="export-btn">Export</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
